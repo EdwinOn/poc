@@ -1,0 +1,29 @@
+<div class="text-center">
+  <h1 class="display-1">
+    Proof of concept
+  </h1>
+  <p>
+    Weryfikacja możliwości zastosowania formio dla generowania dynamicznych
+    formularzy dla aplikacji DMS.
+  </p>
+</div>
+<div class="row">
+  <!-- <div class="col-8 mx-auto">
+    <h2>Czyste formio</h2>
+    <formio [form]="scheme"></formio>
+  </div> -->
+  <div class="col-8 mx-auto">
+    <h2>Formio pocięte</h2>
+    <formio
+      #mainFormio
+      [submission]="{
+        data: initialSubmission
+      }"
+      [form]="customScheme"
+      (submit)="submit($event)"
+    ></formio>
+    <ng-container *ngIf="withComments">
+      <formio src="https://jlhoihrgfvgavqi.form.io/komentarze"></formio>
+    </ng-container>
+  </div>
+</div>

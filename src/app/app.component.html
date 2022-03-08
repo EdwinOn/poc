@@ -1,23 +1,2 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="text-center">
-  <h1 class="display-1">
-    Proof of concept
-  </h1>
-  <p>
-    Weryfikacja możliwości zastosowania formio dla generowania dynamicznych
-    formularzy dla aplikacji DMS.
-  </p>
-</div>
-<div class="row">
-  <div class="col-8 mx-auto">
-    <formio
-      src="https://jlhoihrgfvgavqi.form.io/kontrolaformalnorachunkowa"
-    ></formio>
-    <ng-container *ngIf="withComments">
-      <formio src="https://jlhoihrgfvgavqi.form.io/komentarze"></formio>
-    </ng-container>
-    <ng-container *ngIf="withAttachments">
-      <formio src="https://jlhoihrgfvgavqi.form.io/attachments"></formio>
-    </ng-container>
-  </div>
-</div>
+<router-outlet></router-outlet>
