@@ -13,5 +13,11 @@
     <formio
       src="https://jlhoihrgfvgavqi.form.io/kontrolaformalnorachunkowa"
     ></formio>
+    <ng-container *ngIf="withComments">
+      <formio src="https://jlhoihrgfvgavqi.form.io/komentarze"></formio>
+    </ng-container>
+    <ng-container *ngIf="withAttachments">
+      <formio src="https://jlhoihrgfvgavqi.form.io/attachments"></formio>
+    </ng-container>
   </div>
 </div>
